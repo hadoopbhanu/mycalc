@@ -1,15 +1,6 @@
-name: Test mypy.py on Pull Request
+name: Python Application CI
 
-on:
-  pull_request:
-    branches:
-      - 'Release-V1'  # Replace with your target branch name
-    paths:
-      - 'mypy.py'
-    types:
-      - opened
-      - synchronize
-      - reopened
+on: [push, pull_request]
 
 jobs:
   build:
@@ -18,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        python-version: [3.8] #, 3.9, 3.10]
+        python-version: [3.8, 3.9, 3.10]
 
     steps:
     - name: Checkout repository
