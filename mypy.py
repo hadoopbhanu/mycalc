@@ -1,5 +1,6 @@
 # Test CI-CD py code
 # This will be run using github hosted runners
+#Only run on pull request on Release Branch
 
 import pyjokes
 
