@@ -1,5 +1,6 @@
 # Test CI-CD py code
-# This will be run using github hosted runners
+# This will be run using github hosted runners.
+# Runs on push or pull on the main branch, only this file
 
 import pyjokes
 
