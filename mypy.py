@@ -1,4 +1,4 @@
-# This will be run using github hosted runners.
+# This will be run using github hosted runners. pytest dependency check added.
 # Runs on push or pull on the main branch, only this file. Done
 
 import pyjokes
